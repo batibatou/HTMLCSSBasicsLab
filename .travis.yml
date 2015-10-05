@@ -5,8 +5,6 @@ before_install:
 install:
     - npm install
     - bower install -f
-before_script:
-    - grunt build
 language: node_js
 node_js:
     - "4.1"
