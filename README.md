@@ -64,3 +64,9 @@ Unit test are kept in the `tests/` folder. The `tests/test.js` file contains all
 
 - Use `grunt testBrowser` to test on your browser.
 - Use `grunt testCI` to test on PhantomJS, the headless browser. This will be use by the Continuous Integration system.
+
+## Send your completed assignment
+
+Once completed with all unit tests passing, you can send me back you assignment as a pull request. The pull request will trigger a build of the project in the Continuous Integration framework [TravisCI](https://travis-ci.org/). For this you will have to [commit](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) your changes.
+
+Note that you can also use Travis with your own project.
