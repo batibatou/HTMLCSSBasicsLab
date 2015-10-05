@@ -1,6 +1,6 @@
 # Template Project for Labs
 
-This project is a template for the lab sessions of the Master 2 IDOD course at the [University of Le Havre](https://univ-lehavre.fr).
+This project is a template for the lab sessions of the Master 2 IDOD course at the [University of Le Havre](https://www.univ-lehavre.fr).
 
 The purpose of this template is to ease the completion and testing of labs.
 
@@ -63,4 +63,4 @@ The `app/` folder contains the `HTML` `CSS` and `JavaScript` of the application.
 Unit test are kept in the `tests/` folder. The `tests/test.js` file contains all the assertions that will be tested. It is formatted with the [QUnit](https://qunitjs.com/)  testing framework. You will have to write unit tests in this file.
 
 - Use `grunt testBrowser` to test on your browser.
-- Use `grunt testCI` to test on PhantomJS, the headless browser. This will be use by the Continuous Integration system. 
+- Use `grunt testCI` to test on PhantomJS, the headless browser. This will be use by the Continuous Integration system.
