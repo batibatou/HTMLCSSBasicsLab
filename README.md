@@ -1,4 +1,4 @@
-# Template Project for Labs
+# Template Project for Labs [![Build Status](https://travis-ci.org/ULH-WebDevelopment/TemplateLab.svg?branch=master)](https://travis-ci.org/ULH-WebDevelopment/TemplateLab)
 
 This project is a template for the lab sessions of the Master 2 IDOD course at the [University of Le Havre](https://www.univ-lehavre.fr).
 
