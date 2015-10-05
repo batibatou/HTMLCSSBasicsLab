@@ -1,0 +1,11 @@
+{
+  "name": "TemplateLab",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "jquery": "~1.9.0"
+  },
+  "devDependencies": {
+    "qunit": "~1.19.0"
+  }
+}
