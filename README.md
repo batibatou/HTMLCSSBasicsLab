@@ -1,15 +1,60 @@
-# Template Project for Labs [![Build Status](https://travis-ci.org/ULH-WebDevelopment/TemplateLab.svg?branch=master)](https://travis-ci.org/ULH-WebDevelopment/TemplateLab)
-
-This project is a template for the lab sessions of the Master 2 IDOD course at the [University of Le Havre](https://www.univ-lehavre.fr).
-
-The purpose of this template is to ease the completion and testing of labs.
+# HTML & CSS Basics Lab
 
 
 
 ## Assignment
 
 
-This section is a placeholder to describe the assignment for this lab.  It should define what is expected of you.
+Les trois exercices suivants sont à écrire dans le dossier `app/`. On utilisera le fichier `app/index.html` comme exemple et comme point de départ. Chaque exercice aura sa propre page HTML, ses propres fichiers JS et CSS si nécessaire.
+
+### Exercice 1
+
+A partir du code HTML (non modifiable) suivant :
+
+
+```html
+<div class="blocks">
+  <div id="one">one</div>
+  <div id="two">two</div>
+  <div id="three">three</div>
+  <div id="four">four</div>
+</div>
+```
+
+écrire le code CSS (et rien d'autre que du CSS) permettant d'obtenir le résultat suivant :
+
+![Rendu CSS attendu](boxes.png)
+
+### Exercice 2
+
+A partir des données suivantes :
+
+```
+var diametres = [4878, 12104, 12756, 6787,142800,120000, 51200, 48600];
+var names = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+```
+
+et en utilisant l'API native du DOM (ou jQuery) écrire le code JavaScript permettant de générer dynamiquement le DOM correspondant l'image suivante. Du CSS pourra égament être écrit si nécessaire.
+
+![Rendu HTML/CSS attendu](planetes.png)
+
+### Exercice 3
+
+Ecrire un formulaire Web permettant au commercial d'une agence immobilière de saisir toutes les informations nécéssaires à la résalisation d'une annonce immobilière. Le formulaire devra contenir les informations suivantes (liste nécessaire mais pas suffisante):
+  - le titre de l'annonce
+  - le prix du bien
+  - date de disponibilité du bien
+  - la surface du bien
+  - le type de bien (appartement, maison, terrain, etc.)
+  - la classe énergétique
+  - des contrôles de selection permettant d'indiquer s'il y à une cave, un garage, une terrasse, un jacuzzi,  etc.
+  - une zone de saisie plus grande pour pouvoir rédiger le corps de l'annonce
+  - une zone permettant de glisser/déposer des images à partir de l'explorateur de fichiers (ou du bureau). Une fois déposée, chaque image est affichée sous forme de viniette. Aucun serveur ni aucune bibliothèques tierces ne sont nécéssaires pour faire cela.
+
+Ce formulaire utilisera les standards HTML5 avec tous les nouveau types d'inputs de formulaires. Le drag'n'drop d'image se fera graâce aux standards est sans utiliser de bibliothèques tierces. On utilisera également les facilités offertes par le template CSS [Bootstrap](http://getbootstrap.com/css/#forms).
+
+Il ne faut pas écrire la partie "serveur" de ce formulaire. Les valeurs des champs doivent être validées en utilisant encore les capasités de  HTML5.
+
 
 
 Knowing the assignment, follow the steps below in order to complete the lab.
