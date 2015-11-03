@@ -1,4 +1,5 @@
 div.blocks {
+  position : fixed;
   width: 80px;
   height: 80px;
   padding:10px;
