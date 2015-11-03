@@ -1,0 +1,8 @@
+div.blocks {
+  width: 80px;
+  height: 80px;
+  padding:10px;
+  background-color:#fa4;
+  margin:20px;
+  border: 1px solid black;
+}
