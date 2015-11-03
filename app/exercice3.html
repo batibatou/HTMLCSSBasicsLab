@@ -19,12 +19,18 @@
 
 
 <h3>Type de bien</h3>
-  <input type="checkbox" name="appartement" value="appartement"> appartement </input>
-  <input type="checkbox" name="maison" value="maison"> maison </input>
- <input type="checkbox" name="terrain" value="terrain"> terrain </input>
- <input type="checkbox" name="autre(s)" value="autre(s)"> autres </input>
-<p> Si autre(s), spécifiez ici :</P>
+<label>Appartement
+<input type="radio" name="Appartement" value="appartement">
+</label>
+<label>Maison
+<input type="radio" name="maison" value="maison">
+</label>
+  <label>Autres
+<input type="radio" name="autres" value="autres">
+  </label>
+<label> Si autre(s), spécifiez ici :
 <input type="text" placeholder="autres"/>
+  </label>
 
 <h3>Classe Energétique</h3>
 <input list="ClasseEnergetique">
