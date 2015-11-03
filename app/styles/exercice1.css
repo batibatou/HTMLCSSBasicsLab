@@ -30,4 +30,5 @@ div
     border: 1px solid black;
     transform-origin: 50% 50%;
     transform: scale(1) rotate(-65deg) translate(-100px, 200px);
+    
 }
