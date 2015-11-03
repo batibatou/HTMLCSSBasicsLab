@@ -1,9 +1,33 @@
-div.blocks {
-  position : static;
+div
+{
+  position: absolute;
   width: 80px;
   height: 80px;
-  padding:10px;
-  background-color:#fa4;
-  margin:20px;
-  border: 1px solid black;
+  padding: 10px;
+  background-color: #FFFFFF;
+  margin: 20px;
+}
+#one {
+    background-color: #F5F5DC;
+    border: 1px solid black;
+    transform-origin: 50% 50%;
+    transform: scale(1) rotate(45deg) translate(300px, 0px);
+}
+#two {
+    background-color: #F5F5DC;
+    border: 1px solid black;
+    transform-origin: 50% 50%;
+    transform: scale(1) rotate(-225deg) translate(-100px, -200px);
+}
+#three {
+    background-color: #F5F5DC;
+    border: 1px solid black;
+    transform-origin: 50% 50%;
+    transform: scale(1) rotate(225deg) translate(-100px, 0px);
+}
+#four {
+    background-color: #F5F5DC;
+    border: 1px solid black;
+    transform-origin: 50% 50%;
+    transform: scale(1) rotate(-45deg) translate(-100px, 200px);
 }
