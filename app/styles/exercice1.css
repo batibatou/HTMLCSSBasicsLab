@@ -11,23 +11,23 @@ div
     background-color: #F5F5DC;
     border: 1px solid black;
     transform-origin: 50% 50%;
-    transform: scale(1) rotate(45deg) translate(300px, 0px);
+    transform: scale(1) rotate(25deg) translate(300px, 0px);
 }
 #two {
     background-color: #F5F5DC;
     border: 1px solid black;
     transform-origin: 50% 50%;
-    transform: scale(1) rotate(-225deg) translate(-100px, -200px);
+    transform: scale(1) rotate(-245deg) translate(-100px, -200px);
 }
 #three {
     background-color: #F5F5DC;
     border: 1px solid black;
     transform-origin: 50% 50%;
-    transform: scale(1) rotate(225deg) translate(-100px, 0px);
+    transform: scale(1) rotate(205deg) translate(-100px, 0px);
 }
 #four {
     background-color: #F5F5DC;
     border: 1px solid black;
     transform-origin: 50% 50%;
-    transform: scale(1) rotate(-45deg) translate(-100px, 200px);
+    transform: scale(1) rotate(-65deg) translate(-100px, 200px);
 }
