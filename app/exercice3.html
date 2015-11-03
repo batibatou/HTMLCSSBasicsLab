@@ -1,1 +1,70 @@
-TODO
+<h2>Formulaire de saisie annonce immobilière</h2>
+
+
+<h3>Titre de l'annonce</h3>
+<form >
+<input type="text"/>
+
+<h3>Prix du bien</h3>
+
+  <input type="number" placeholder="€"/>
+
+<h3>Surface</h3>
+
+  <input type="number" placeholder="m²"/>
+
+
+<h3>Date de disponibilité du bien</h3>
+  <input type="date" />
+
+
+<h3>Type de bien</h3>
+  <input type="checkbox" name="appartement" value="appartement"> appartement </input>
+  <input type="checkbox" name="maison" value="maison"> maison </input>
+ <input type="checkbox" name="terrain" value="terrain"> terrain </input>
+ <input type="checkbox" name="autre(s)" value="autre(s)"> autres </input>
+<p> Si autre(s), spécifiez ici :</P>
+<input type="text" placeholder="autres"/>
+
+<h3>Classe Energétique</h3>
+<input list="ClasseEnergetique">
+<datalist id="ClasseEnergetique">
+<option value="A">
+<option value="B">
+<option value="C">
+<option value="D">
+<option value="E">
+<option value="F">
+<option value="G">
+<option value="H">
+</datalist>
+
+<h3>Autres</h3>
+
+ <input type="checkbox" name="cave" value="cave"> cave </input>
+  <input type="checkbox" name="garage" value="garage"> garage </input>
+ <input type="checkbox" name="terrasse" value="terrasse"> terrasse </input>
+ <input type="checkbox" name="jacuzzi" value="jacuzzi"> jaccuzzi </input>
+ <input type="checkbox" name="autres" value="autres"> jaccuzzi </input>
+<p> Si autres, spécifiez ici en séparant par une virgule :</P>
+
+
+<h3>min, max, step</h3>
+<input type="range" min="12" max="120" step="12">
+<br>
+<input type="number" min="12" max="120" step="12">
+<br>
+<input type="date" min="2015-10-01" max="2015-12-01" step="14">
+
+<h3>pattern</h3>
+<input type="text" name="code" pattern="[A-Za-z]{3}" title="3 letters code" />
+
+<h3>required</h3>
+
+<form action="#">
+        code:
+        <input type="text" name="code" pattern="[A-Z]{3}" placeholder="AAA" title="Three letters code" />
+        <br>value:
+        <input type="number" min="1" max="100" title="integer between 1 and 100" required>
+        <input type="submit" value="Submit">
+</form>
