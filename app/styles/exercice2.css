@@ -1,0 +1,27 @@
+#planets div{
+
+height: 90px;
+font-size: 20px;
+
+}
+
+#planets div div{
+
+  padding-left: 30px;
+  height: 70px;
+  background-color: black;
+}
+#planets div span{
+
+  margin-left: 70px;
+}
+
+
+#planets{
+
+  width: 500px;
+  height: 900px;
+  transform-origin: 50% 50%;
+ transform:translate(300px) rotate(-90deg);
+
+}
