@@ -1,76 +1,174 @@
-<h2>Formulaire de saisie annonce immobilière</h2>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Exercice 3</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/exercice3.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Vendre un bien</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Vendre un bien immobilier</h1>
+        <p class="lead">Utiliser le formulaire ci-dessous pour renseigner toutes les informations de votre bien.
+        </p>
+      </div>
+
+      <!-- Catégorie -->
+      <div class="panel panel-info">
+        <div class="panel-heading">Catégorie</div>
+          <div class="form-group">
+            <label class="control-label">Vous êtes un:</label>
+            <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+              Particulier
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Professionel
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label">Type d'annonce:</label>
+            <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked="">
+              Offre (vous vendez un bien immobilier)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
+              Demande (vous recherchez un bien immobilier)
+              </label>
+            </div>
+          </div>
+        <div class="panel-body">
+        </div>
+      </div>
+      <!-- Fin catégorie-->
 
 
-<h3>Titre de l'annonce</h3>
-<form >
-<input type="text"/>
+      <!-- Votre annonce-->
+      <div class="panel panel-info">
+        <div class="panel-heading">Votre annonce</div>
+        <div class="panel-body">
+          <form role="form">
+            <div class="form-group">
+              <label class="control-label" >Titre de l'annonce:</label>
+              <input type="text" id="titre" placeholder="Entrer le titre de l'annonce" size="77,5" required/>
+            </div>
+            <label>Type de bien:</label>
+            <select name="select">
+              <option value="value1" selected>Maison</option>
+              <option value="value2">Appartement</option>
+              <option value="value3">Terrain</option>
+              <option value="value4">Parking</option>
+              <option value="value5">Autre</option>
+            </select>
+            <label>Surface:</label>
+            <input placeholder="en m²" required/>
+            <label>Pièces:</label>
+            <input /><br /><br />
+            <label>Classe énergie:</label>
+            <select name="select">
+              <option value="value1">A (moins de 50)</option>
+              <option value="value2">B (de 51 à 90)</option>
+              <option value="value3">C (de 91 à 150)</option>
+              <option value="value4">D (de 151 à 230)</option>
+              <option value="value5">E (de 231 à 330)</option>
+              <option value="value5">F (de 331 à 450)</option>
+              <option value="value5">G (de 451 à 590)</option>
+              <option value="value5">H (de 591 à 750)</option>
+              <option value="value5">I (751 et plus)</option>
+              <option value="value5">Vierge</option>
+            </select>
+            <label>GES:</label>
+            <select name="select">
+              <option value="value1">A (moins de 5)</option>
+              <option value="value2">B (de 6 à 10)</option>
+              <option value="value3">C (de 11 à 20)</option>
+              <option value="value4">D (de 21 à 35)</option>
+              <option value="value5">E (de 36 à 55)</option>
+              <option value="value5">F (de 56 à 80)</option>
+              <option value="value5">G (de 81 à 110)</option>
+              <option value="value5">H (de 111 à 145)</option>
+              <option value="value5">I (146 et plus)</option>
+              <option value="value5">Vierge</option>
+            </select>
+            <label>Date de disponibilité:</label>
+            <input type="date" required/><br /><br />
 
-<h3>Prix du bien</h3>
+            <label class="control-label">Plus-values:</label>
+            <label>
+            <input type="checkbox" name="optionsRadios" id="optionsCheckbox1" value="option1">
+              Cave
+            </label>
+            <label>
+            <input type="checkbox" name="optionsRadios" id="optionsCheckbox2" value="option2">
+              Garage
+            </label>
+            <label>
+            <input type="checkbox" name="optionsRadios" id="optionsCheckbox3" value="option2">
+              Terasse
+            </label>
+            <label>
+            <input type="checkbox" name="optionsRadios" id="optionsCheckbox4" value="option4">
+              Jacuzzi
+            </label><br /><br />
 
-  <input type="number" placeholder="€"/>
+            <label>Texte de l'annonce:</label>
+            <textarea rows="5" cols="80" required></textarea> <br /><br />
 
-<h3>Surface</h3>
+            <input type='file' onchange="readURL(this);" multiple/>
+            <img id="blah" src="#" alt="your image" /><br /><br />
+            <button type="submit" class="btn btn-default">Créer annonce</button>
+          </form>
+        </div>
+      </div>
+      <!-- Fin votre annonce-->
+    </div><!-- /.container -->
+    <!-- cdn for modernizr, if you haven't included it already -->
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+    <!-- polyfiller file to detect and load polyfills -->
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bower_components/bootsrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/exercice3.js" />
 
-  <input type="number" placeholder="m²"/>
-
-
-<h3>Date de disponibilité du bien</h3>
-  <input type="date" />
-
-
-<h3>Type de bien</h3>
-<label>Appartement
-<input type="radio" name="Appartement" value="appartement">
-</label>
-<label>Maison
-<input type="radio" name="maison" value="maison">
-</label>
-  <label>Autres
-<input type="radio" name="autres" value="autres">
-  </label>
-<label> Si autre(s), spécifiez ici :
-<input type="text" placeholder="autres"/>
-  </label>
-
-<h3>Classe Energétique</h3>
-<input list="ClasseEnergetique">
-<datalist id="ClasseEnergetique">
-<option value="A">
-<option value="B">
-<option value="C">
-<option value="D">
-<option value="E">
-<option value="F">
-<option value="G">
-<option value="H">
-</datalist>
-
-<h3>Autres</h3>
-
- <input type="checkbox" name="cave" value="cave"> cave </input>
-  <input type="checkbox" name="garage" value="garage"> garage </input>
- <input type="checkbox" name="terrasse" value="terrasse"> terrasse </input>
- <input type="checkbox" name="jacuzzi" value="jacuzzi"> jaccuzzi </input>
- <input type="checkbox" name="autres" value="autres"> jaccuzzi </input>
-<p> Si autres, spécifiez ici en séparant par une virgule :</P>
-
-
-<h3>min, max, step</h3>
-<input type="range" min="12" max="120" step="12">
-<br>
-<input type="number" min="12" max="120" step="12">
-<br>
-<input type="date" min="2015-10-01" max="2015-12-01" step="14">
-
-<h3>pattern</h3>
-<input type="text" name="code" pattern="[A-Za-z]{3}" title="3 letters code" />
-
-<h3>required</h3>
-
-<form action="#">
-        code:
-        <input type="text" name="code" pattern="[A-Z]{3}" placeholder="AAA" title="Three letters code" />
-        <br>value:
-        <input type="number" min="1" max="100" title="integer between 1 and 100" required>
-        <input type="submit" value="Submit">
-</form>
+</body></html>
