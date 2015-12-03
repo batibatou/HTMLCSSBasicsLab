@@ -1,18 +1,14 @@
 var diametres = [4878, 12104, 12756, 6787,142800,120000, 51200, 48600];
 var names = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
 
-$(document).ready(function()
-{
-  var height = $(".blocks").height();
-  var width = $(".blocks").width();
-  var diametreMax = diametres[0];
-  for(var cpt = 1; cpt < names.length; cpt++)
-    diametreMax = Math.max(diametreMax, diametres[cpt]);
+$(function() {
+	for (var i = 0; i < diametres.length; i++) {
+		$("#diag").append("<div id="+names[i]+"><span id=span"+names[i]+"><b>"+names[i]+"</b></span></div>");
+		$("#"+names[i]).css("color","grey").css("background-color", "black").css("height","80px").css("width", diametres[i]/250).css("margin", "5px");
+		//28 taille des lettres, 80 hauteur à décaler et 5 la taille des margin
+		var top = 30 + 80 * i + 5 * i;
+		$("#span"+names[i]).css("top", top + "px");
+		//alert(80 - $("#span"+names[i]).height())
+	}
 
-  for(var cpt = 0; cpt < diametres.length; cpt++)
-  {
-    $(".blocks").append("<div class=\"planet\" style='background:url(\"img/" + names[cpt] + ".png\");width:" + (diametres[cpt] * width / diametreMax) + "px;'><span>" + names[cpt] + "</span></div>");
-  }
-
-  $(".blocks > div").css("height", ((height - 40) / names.length ) + "px").css("line-height", ((height - 40) / names.length ) + "px");
 });
